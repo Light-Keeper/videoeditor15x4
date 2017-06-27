@@ -1,0 +1,8 @@
+{{#if model.singedin}}
+  logged in as {{model.name}}<br/>
+  <button {{action 'doLogout'}}> logout </button>
+{{else}}
+  not logged In.<br/>
+  click here to login
+  <button {{action 'doLogin'}}> login </button>
+{{/if}}
